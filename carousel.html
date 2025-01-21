@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<body>
+
+  
+<div id="carousel" class="carousel" style="display:none">
+  <div id="carousel-wrapper" class="carousel-wrapper">
+    <div id="carousel-image"></div>
+    <div id="carousel-gradients" class="carousel-gradients">
+      <div id="carousel-left-grad" class="carousel-left-grad"></div>
+      <div id="carousel-right-grad" class="carousel-right-grad"></div>
+    </div>
+  </div>
+  <div id='carousel-navigation' class="carousel-navigation">
+    <button id="carousel-navigation-first" name='first' class='carousel-navigation-button' onclick="carouselSlide(-2)"><strong>|<</strong></button>
+    <button name='previous' class='carousel-navigation-button' onclick="carouselSlide(-1)"><strong><</strong></button>
+    <button name='download' class='carousel-navigation-button flex-row center' >_</button>
+    <button name='next' class='carousel-navigation-button' onclick="carouselSlide(1)"><strong>></strong></button>
+    <button name='last' class='carousel-navigation-button' id="carousel-navigation-last" onclick="carouselSlide(2)"><strong>>|</strong></button>
+  </div>
+  <div id="carousel-panorama" class="carousel-panorama"></div>
+</div>
+<p id='carousel-result'></p>
+
+  
+</body>
+</html>
