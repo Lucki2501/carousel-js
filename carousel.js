@@ -147,8 +147,8 @@ function carouselSlide(increment) {
 carouselLoad(images)
 
 getElement('carousel-download').addEventListener('click',(e) => {
-	downloadFile(
-			src = images[getElement('index').value]['src'],
-			name = images[getElement('index').value]['name']
-		)
+  downloadFile(
+    src = images[getElement('index').value]['src'],
+    name = images[getElement('index').value]['name']
+  )
 })
