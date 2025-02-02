@@ -54,15 +54,15 @@ let images = [
     ]
 
 async function downloadFile(src,name) {
-	const image = await fetch(src)
+  const image = await fetch(src)
   const imageBlob = await image.blob()
   const imageURL = URL.createObjectURL(imageBlob)
-	const link = document.createElement('a');
-	link.href = imageURL;
-	link.download = name;
-	document.body.appendChild(link);
-	link.click();
-	document.body.removeChild(link);
+  const link = document.createElement('a');
+  link.href = imageURL;
+  link.download = name;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 
 const carouselLoad = (array) => {
